@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 64.2%;
+}
+#top {
+  height: 0.2rem;
+  background-color: orange;
+}
+nav {
+  width: 40rem;
+  margin: 2rem auto;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  display: inline-block;
+  margin: 1rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  width: 8rem;
+  color: white;
+}
+nav ul li a:hover {
+  font-size: 1.9rem;
+  color: orange;
+}
+.anchortag {
+  text-decoration: none;
+  text-align: center;
+}
+
+#container,
+form {
+  background: #fff;
+  padding: 2rem 2rem 1rem;
+  max-width: 45rem;
+  margin: 5rem auto 0;
+  box-shadow: 0 0 1rem #222;
+  border-radius: 0.2rem;
+}
+#container {
+  min-width: 80rem;
+}
+form h2 {
+  margin: 0 0 5rem 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #666666;
+  border-bottom: solid 0.1rem #e5e5e5;
+}
+form p {
+  margin: 0 0 3rem 0;
+  position: relative;
+}
+form input,
+select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  margin: 0;
+  background: #fff;
+  border: 0.1rem solid #dbdbdb;
+  font-size: 1rem;
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.2rem;
+}
+form span {
+  display: block;
+  background: #f9a5a5;
+  padding: 0.3rem 0.5rem;
+  color: #666;
+}
+form button {
+  background: orange;
+  border-radius: 0.2rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  margin: 2rem 0 0;
+  outline: none;
+  padding: 0.7rem 1rem;
+  text-shadow: 0 0.1rem #8f8d86;
+}
+form button:hover,
+a.anchortag:hover {
+  background: #696967;
+  font-weight: bold;
+  text-shadow: 0 0.1rem #8f8d86;
+}
+form label {
+  position: absolute;
+  left: 0.8rem;
+  top: 1.2rem;
+  color: orange;
+  font-size: 0.5rem;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  transition: color 0.3s, top 0.3s, background-color 0.8s;
+}
+
+form label:hover {
+  color: #696967;
+  cursor: pointer;
+}
+form label.floatLabel {
+  top: -1.3rem;
+  background-color: #fff;
+  font-size: 1rem;
+}
