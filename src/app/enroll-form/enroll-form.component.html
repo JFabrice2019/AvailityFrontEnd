@@ -1,24 +1,24 @@
 <div id="top"></div>
-<div class="container-fluid">
+<div class="container">
   <form [formGroup]="enrollForm" (ngSubmit)="onSubmit()">
     <h2>Join Availity</h2>
     <p class="form-group">
       <label for="Firstname" class="floatLabel">Firstname</label>
       <input
         [class.is-invalid]="
-          enrollForm.get('FirstName')!.invalid &&
-          enrollForm.get('FirstName')!.touched
+          enrollForm.get('firstname')!.invalid &&
+          enrollForm.get('firstname')!.touched
         "
-        id="Firstname"
-        name="FirstName"
+        id="firstname"
+        name="firstname"
         type="text"
         class="form-control"
-        formControlName="FirstName"
+        formControlName="firstname"
       />
       <small
         *ngIf="
-          enrollForm.get('FirstName')!.invalid &&
-          enrollForm.get('FirstName')!.touched
+          enrollForm.get('firstname')!.invalid &&
+          enrollForm.get('firstname')!.touched
         "
         class="text-danger"
       >
@@ -29,18 +29,18 @@
       <label for="Lastname" class="floatLabel">Lastname</label>
       <input
         [class.is-invalid]="
-          enrollForm.get('LastName')!.invalid &&
-          enrollForm.get('LastName')!.touched
+          enrollForm.get('lastname')!.invalid &&
+          enrollForm.get('lastname')!.touched
         "
-        id="Lastname"
-        name="Lastname"
+        id="lastname"
+        name="lastname"
         type="text"
-        formControlName="LastName"
+        formControlName="lastname"
       />
       <small
         *ngIf="
-          enrollForm.get('LastName')!.invalid &&
-          enrollForm.get('LastName')!.touched
+          enrollForm.get('lastname')!.invalid &&
+          enrollForm.get('lastname')!.touched
         "
         class="text-danger"
       >
@@ -48,108 +48,108 @@
       </small>
     </p>
     <p>
-      <label for="NpiNumber" class="floatLabel">NPI Number</label>
+      <label for="npiNumber" class="floatLabel">NPI Number</label>
       <input
         [class.is-invalid]="
-          enrollForm.get('NpiNumber')!.invalid &&
-          enrollForm.get('NpiNumber')!.touched
+          enrollForm.get('npiNumber')!.invalid &&
+          enrollForm.get('npiNumber')!.touched
         "
-        id="NpiNumber"
-        name="NpiNumber"
+        id="npiNumber"
+        name="npiNumber"
         type="text"
-        formControlName="NpiNumber"
+        formControlName="npiNumber"
       />
       <small
         *ngIf="
-          enrollForm.get('NpiNumber')!.invalid &&
-          enrollForm.get('NpiNumber')!.touched
+          enrollForm.get('npiNumber')!.invalid &&
+          enrollForm.get('npiNumber')!.touched
         "
         class="text-danger"
       >
         NPI Number is required
       </small>
     </p>
-    <div formGroupName="BusAddress">
-      <p class="form-group">
-        <label for="Line1" class="floatLabel">Address line</label>
-        <input
-          [class.is-invalid]="
-            enrollForm.get('BusAddress.Line1')!.invalid &&
-            enrollForm.get('BusAddress.Line1')!.touched
-          "
-          id="Line1"
-          type="text"
-          class="form-control"
-          formControlName="Line1"
-        />
-        <small
-          *ngIf="
-            enrollForm.get('BusAddress.Line1')!.invalid &&
-            enrollForm.get('BusAddress.Line1')!.touched
-          "
-          class="text-danger"
-        >
-          Please, enter a valid zip code.
-        </small>
-      </p>
-      <p class="form-group">
-        <label for="City" class="floatLabel">City</label>
-        <input
-          [class.is-invalid]="
-            enrollForm.get('BusAddress.City')!.invalid &&
-            enrollForm.get('BusAddress.City')!.touched
-          "
-          id="City"
-          type="text"
-          class="form-control"
-          formControlName="City"
-        />
-        <small
-          *ngIf="
-            enrollForm.get('BusAddress.City')!.invalid &&
-            enrollForm.get('BusAddress.City')!.touched
-          "
-          class="text-danger"
-        >
-          Please, enter a city.
-        </small>
-      </p>
-      <p class="form-group">
-        <label for="State" class="floatLabel">State</label>
-        <select id="State" class="form-control" formControlName="State">
-          <option></option>
-          <option *ngFor="let state of states">{{ state }}</option>
-        </select>
-      </p>
-      <p class="form-group">
-        <label for="Zipcode" class="floatLabel">Zip code</label>
-        <input
-          [class.is-invalid]="
-            enrollForm.get('BusAddress.Zipcode')!.invalid &&
-            enrollForm.get('BusAddress.Zipcode')!.touched
-          "
-          id="Zipcode"
-          type="text"
-          class="form-control"
-          formControlName="Zipcode"
-        />
-        <small
-          *ngIf="
-            enrollForm.get('BusAddress.Zipcode')!.invalid &&
-            enrollForm.get('BusAddress.Zipcode')!.touched
-          "
-          class="text-danger"
-        >
-          Please, enter a valid zip code.
-        </small>
-      </p>
-    </div>
-    <p>
-      <label for="Phone" class="floatLabel">Phone</label>
-      <input id="Phone" name="Phone" type="tel" formControlName="Phone" />
+    <p class="form-group">
+      <label for="line1" class="floatLabel">Address line</label>
+      <input
+        [class.is-invalid]="
+          enrollForm.get('line1')!.invalid && enrollForm.get('line1')!.touched
+        "
+        id="line1"
+        type="text"
+        class="form-control"
+        formControlName="line1"
+      />
       <small
         *ngIf="
-          enrollForm.get('Phone')!.invalid && enrollForm.get('Phone')!.touched
+          enrollForm.get('line1')!.invalid && enrollForm.get('line1')!.touched
+        "
+        class="text-danger"
+      >
+        Please, enter a valid zip code.
+      </small>
+    </p>
+    <p class="form-group">
+      <label for="city" class="floatLabel">City</label>
+      <input
+        [class.is-invalid]="
+          enrollForm.get('city')!.invalid && enrollForm.get('city')!.touched
+        "
+        id="city"
+        type="text"
+        class="form-control"
+        formControlName="city"
+      />
+      <small
+        *ngIf="
+          enrollForm.get('city')!.invalid && enrollForm.get('city')!.touched
+        "
+        class="text-danger"
+      >
+        Please, enter a city.
+      </small>
+    </p>
+    <p class="form-group">
+      <label for="state" class="floatLabel">State</label>
+      <select id="state" class="form-control" formControlName="state">
+        <option></option>
+        <option *ngFor="let state of states">{{ state }}</option>
+      </select>
+    </p>
+    <p class="form-group">
+      <label for="zipcode" class="floatLabel">Zip code</label>
+      <input
+        [class.is-invalid]="
+          enrollForm.get('zipcode')!.invalid &&
+          enrollForm.get('zipcode')!.touched
+        "
+        id="zipcode"
+        type="text"
+        class="form-control"
+        formControlName="zipcode"
+      />
+      <small
+        *ngIf="
+          enrollForm.get('zipcode')!.invalid &&
+          enrollForm.get('zipcode')!.touched
+        "
+        class="text-danger"
+      >
+        Please, enter a valid zip code.
+      </small>
+    </p>
+    <p>
+      <label for="phonenumber" class="floatLabel">Phone</label>
+      <input
+        id="phonenumber"
+        name="phonenumber"
+        type="tel"
+        formControlName="phonenumber"
+      />
+      <small
+        *ngIf="
+          enrollForm.get('phonenumber')!.invalid &&
+          enrollForm.get('phonenumber')!.touched
         "
         class="text-danger"
       >
@@ -157,11 +157,11 @@
       </small>
     </p>
     <p>
-      <label for="Email" class="floatLabel">Email</label>
-      <input id="Email" name="Email" type="email" formControlName="Email" />
+      <label for="email" class="floatLabel">Email</label>
+      <input id="email" name="email" type="email" formControlName="email" />
       <small
         *ngIf="
-          enrollForm.get('Email')!.invalid && enrollForm.get('Email')!.touched
+          enrollForm.get('email')!.invalid && enrollForm.get('email')!.touched
         "
         class="text-danger"
       >
@@ -177,6 +177,12 @@
         Submit
       </button>
     </p>
+    <p *ngIf="showMessage">
+      <strong>Registration Successful!</strong> Please click
+      <a [routerLink]="['/enrollees']" routerLinkActive="router-link-active"
+        >here</a
+      >
+      to to view members.
+    </p>
   </form>
-  {{ enrollForm.value | json }}
 </div>

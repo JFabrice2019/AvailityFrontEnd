@@ -10,33 +10,6 @@ html {
   height: 0.2rem;
   background-color: orange;
 }
-nav {
-  width: 40rem;
-  margin: 2rem auto;
-}
-
-nav ul {
-  list-style: none;
-}
-nav ul li {
-  float: left;
-}
-nav ul li a {
-  display: inline-block;
-  margin: 1rem;
-  font-size: 1.8rem;
-  text-decoration: none;
-  width: 8rem;
-  color: white;
-}
-nav ul li a:hover {
-  font-size: 1.9rem;
-  color: orange;
-}
-.anchortag {
-  text-decoration: none;
-  text-align: center;
-}
 
 #container,
 form {

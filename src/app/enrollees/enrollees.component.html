@@ -1,0 +1,36 @@
+<div class="container">
+  <nav>
+    <a [routerLink]="['/form']">Add a new member</a>
+  </nav>
+  <div class="card">
+    <h2 class="text-center">Member List</h2>
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>NPI Number</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Zip code</th>
+          <th>Phone</th>
+          <th>Email</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let enrollee of enrollees">
+            <td>{{ enrollee.firstname }}</td>
+            <td>{{ enrollee.lastname }}</td>
+            <td>{{ enrollee.npiNumber }}</td>
+            <td>{{ enrollee.line1 }}</td>
+            <td>{{ enrollee.city }}</td>
+            <td>{{ enrollee.state }}</td>
+            <td>{{ enrollee.zipcode }}</td>
+            <td>{{ enrollee.phonenumber }}</td>
+            <td>{{ enrollee.email }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
